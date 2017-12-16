@@ -1,0 +1,74 @@
+﻿Lê Phúc Thịnh Phát
+1411060576
+14DTC02
+
+$ git config --global user.name "[name]" ------ 
+-cài đặt tên đính kèo khi thực hiện commit
+$ git config --global user.email "[email address]"-----
+	-cài đặt địa chỉ email  đính kèm khi thực hiện commit
+$ git config --global color.ui auto----
+	-tạo màu cho các dòng lệnh
+$ git init [project-name]----
+	-tạo một cái kho lưu trữ mới với tên
+$ git clone [url]---
+	-tải một dự án về
+$ git status---
+	-hiện ra danh sách các file mới và các thay đổi trong file 
+$ git diff----
+	-hiện các file chưa được thay đổi
+$ git add [file]----
+	-snapshots các file để chuẩn bị commit
+$ git diff –staged----
+	-Hiện các file có khác biệt giữa phiên bản hiện tại và bản mới hơn
+$ git reset [file]----
+	-xóa các thay đổi của file trở về bản trước
+$ git commit -m "[descriptive message]"----
+	-đánh dấu lại phiên bản
+$ git branch----
+	-hiện tất cả nhánh ở kho hiện tại
+$ git branch [branch-name]-----
+	-tạo 1 nhánh mới có tên
+$ git checkout [branch-name]----
+	-chuyển sang nhánh
+$ git merge [branch]
+	-gộp nhánh
+$ git branch -d [branch-name]
+	-xóa nhánh
+$ git rm [file]----
+	-xóa file từ thư mục làm việc
+$ git rm --cached [file]----
+	-xóa file từ kiểm saots phiên bản nhưng vẫn giữ ở máy cục bộ
+$ git mv [file-original] [file-renamed]----
+	-thay đổi tên file và chuẩn bị commit
+$ git log----
+	-hiện lịch sử các phiên bản của file ở nhánh hiện tại
+$ git log --follow [file]----
+	- -hiện lịch sử các phiên bản các file, bao gồm cả thay đổi tên
+$ git diff [first-branch]...[second-branch]----
+	-hiện các khác biệt giữa 2 nhánh
+$ git show [commit]----
+	-hiện thong tin metadata và nội dung thay đổi của commit đó
+*.log
+build/
+temp-*------
+
+	-một tập tin văn bản có tên .gitignore ngăn chặn phiên bản ngẫu nhiên ncaur tệp và đường dẫn phù hợp với các tệp tin được xác định
+
+$ git ls-files --other --ignored --exclude-standard----
+	-hiện tất cả các file bị bỏ qua
+$ git reset [commit]----
+	-hoành tác các commit, các thay đổi ở máy cục bộ
+$ git reset --hard [commit]----
+	-loại bỏ tất cả lịch sử và chuyển về commit trước
+$ git stash-----
+	-lưu vào bộ nhớ tạm tất cả cá file đã đc theo dõi
+$ git stash pop----
+	-hoành tác lại các file đã stash
+$ git fetch [bookmark]----
+	-tải về tất cả  lịch sử  bookmark của kho
+$ git merge [bookmark]/[branch]----
+	-kết hợp các nhánh  của bookmark vào nhánh hiện tại 
+$ git push [alias] [branch]---
+	-tải lên tất cả các commit ở nhánh cục bộ  lên github
+$ git pull----
+	-tải về tất cả các bookmark và kết họp các thay đổi 
